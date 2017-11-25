@@ -28,7 +28,7 @@ namespace PantasFinal.ViewModels
 
         private async void Login()
         {
-            if (string.IsNullOrEmpty(Usuario1))
+            if (string.IsNullOrEmpty(Usuario1)) 
             {
                await dialogService.ShowMessage("Error!","Ingrese Usuario");
                 return;
