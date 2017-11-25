@@ -2,8 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PantasFinal.Pages.UsuarioPage"
-             Title="Plantas"
-             BackgroundColor="{StaticResource BackgroundColor}">
+              Title="Usuarios"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Usuarios"

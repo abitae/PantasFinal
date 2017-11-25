@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PantasFinal.Pages.EnfermedadesPage"
              Title="Enfermedades"
-              BackgroundColor="{StaticResource BackgroundColor}">>
+             BackgroundColor="{StaticResource BackgroundColor}"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
         <StackLayout>
             <Label TextColor="{StaticResource FontColor}"
