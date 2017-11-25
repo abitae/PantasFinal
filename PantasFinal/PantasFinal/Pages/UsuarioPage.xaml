@@ -2,13 +2,60 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PantasFinal.Pages.UsuarioPage"
-              >
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Usuarios"
-                TextColor="{StaticResource FontColor}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+              Title="Usuarios"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+
+    <StackLayout Padding="10" Spacing="20">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label
+                    Text="Plantas"
+                    TextColor="{StaticResource MainColor}"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                </Label>
+                <Image Source="ic_launcher"
+                       WidthRequest="80"
+                       HeightRequest="80"
+                       HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                </Image>
+            </StackLayout>
+        <BoxView
+                    HeightRequest="3"
+                    Color="{StaticResource MainColor}">
+        </BoxView>
+        
+            <Entry Placeholder="Usuario"
+                   TextColor="{StaticResource MainColor}"></Entry>
+        <Entry Placeholder="Pasword"
+               IsPassword="True"
+                   TextColor="{StaticResource MainColor}"></Entry>
+        <Button
+            Text="Login"
+            TextColor="{StaticResource AccentColor}"
+            HorizontalOptions="Center"
+                    VerticalOptions="Center">
+            </Button>
+       
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label
+                Text="Recuerdame"
+                TextColor="{StaticResource MainColor}"
+                 HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center">
+                </Label>
+            <Switch HorizontalOptions="End"
+                    VerticalOptions="Center"></Switch>
         </StackLayout>
-    </ContentPage.Content>
+        <Label
+                Text="No recuerdo mi Contraseña"
+                TextColor="{StaticResource AccentColor}"
+                 HorizontalOptions="Center"
+                    VerticalOptions="Center">
+        </Label>
+    </StackLayout>
+    
 </ContentPage>

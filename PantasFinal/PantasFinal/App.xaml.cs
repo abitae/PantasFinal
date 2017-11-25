@@ -14,7 +14,7 @@ namespace PantasFinal
         {
             InitializeComponent();
 
-            MainPage = new MasterPage();
+            MainPage = new UsuarioPage();
         }
 
         protected override void OnStart()
