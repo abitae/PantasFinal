@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:pages="clr-namespace:PantasFinal.Pages;assembly=PantasFinal"
+                  x:Class="PantasFinal.Pages.MasterPage">
+    
+    <MasterDetailPage.Master>
+        <pages:MenuPage>
+            
+        </pages:MenuPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage 
+            x:Name="Navigator"
+            BarBackgroundColor="{StaticResource MainColor}">
+            <x:Arguments>
+                <pages:EnfermedadesPage>
+                </pages:EnfermedadesPage>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
+
