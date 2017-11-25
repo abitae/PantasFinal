@@ -6,10 +6,11 @@ namespace PantasFinal.ViewModels
     {
 
         public ObservableCollection<MenuItemViewModel> Menu { get; set; }
-
+        public UsuarioViewModel NewLogin { get; set; }
         public MainViewModel()
         {
             Menu = new ObservableCollection<MenuItemViewModel>();
+            NewLogin = new UsuarioViewModel();
             LoadMenu();
         }
 
