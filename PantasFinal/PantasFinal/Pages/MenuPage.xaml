@@ -3,13 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PantasFinal.Pages.MenuPage"
              Title="Menu"
-             BackgroundColor="{StaticResource MenuColor}">>
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Menu Page"
-                   TextColor="{StaticResource MenuFontColor}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             BackgroundColor="{StaticResource MenuColor}"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <StackLayout Padding="8">
+        <StackLayout Orientation="Horizontal">
+        <Label
+            Text="Plantas"
+            TextColor="{StaticResource MenuFontColor}"
+            FontSize="24"
+            FontAttributes="Bold"
+            HorizontalOptions="StartAndExpand"
+            VerticalOptions="Center">
+        </Label>
+        <Image Source="ic_launcher"
+               WidthRequest="80"
+               HeightRequest="80"
+               HorizontalOptions="End"
+            VerticalOptions="Center">
+        </Image>
         </StackLayout>
-    </ContentPage.Content>
+        <ListView 
+    ItemsSource="{Binding Menu}"
+    HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image 
+              Source="{Binding Icon}"
+              WidthRequest="50"
+              HeightRequest="50"/>
+                            <Label 
+              Grid.Column="1"
+              VerticalOptions="Center"
+              TextColor="{StaticResource MenuFontColor}"
+              Text="{Binding Title}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
 </ContentPage>

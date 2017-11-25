@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using PantasFinal.Pages;
+﻿using PantasFinal.Pages;
 using Xamarin.Forms;
 
 namespace PantasFinal
