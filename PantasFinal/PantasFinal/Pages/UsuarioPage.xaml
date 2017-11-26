@@ -31,11 +31,11 @@
         </BoxView>
         
             <Entry 
-                Text="{Binding Usuario1,Mode=TwoWay}"
-                Placeholder="Usuario"
+                Text="{Binding Usuario,Mode=TwoWay}"
+                Placeholder="DNI"
                 TextColor="{StaticResource MainColor}"></Entry>
         <Entry 
-            Text="{Binding Pass,Mode=TwoWay}"
+            Text="{Binding Pasword,Mode=TwoWay}"
             Placeholder="Pasword"
                IsPassword="True"
                    TextColor="{StaticResource MainColor}"></Entry>
@@ -46,7 +46,10 @@
             HorizontalOptions="Center"
                     VerticalOptions="Center">
             </Button>
-       
+        <ActivityIndicator
+            IsRunning="{Binding IsRunning}">
+            
+        </ActivityIndicator>
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
             <Label
                 Text="Recuerdame"
