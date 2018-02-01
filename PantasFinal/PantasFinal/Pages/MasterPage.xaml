@@ -14,8 +14,8 @@
             x:Name="Navigator"
             BarBackgroundColor="{StaticResource MainColor}">
             <x:Arguments>
-                <pages:EnfermedadesPage>
-                </pages:EnfermedadesPage>
+                <pages:MiUbicacionPage>
+                </pages:MiUbicacionPage>
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>

@@ -5,16 +5,21 @@
              x:Class="PantasFinal.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="MainColor">#132326</Color>
-            <Color x:Key="FontColor">#FFD99B</Color>
-            <Color x:Key="MenuColor">#132326</Color>
-            <Color x:Key="MenuFontColor">#FFD99B</Color>
-            <Color x:Key="BackgroundColor">#88A34F</Color>
-            <Color x:Key="AccentColor">#BF352F</Color>
+
+            <Color x:Key="MainColor">#F26101</Color>
+
+            <Color x:Key="FontColor">#304269</Color>
+            <Color x:Key="MenuColor">#304269</Color>
+            <Color x:Key="MenuFontColor">#FFFFFF</Color>
+            <Color x:Key="BackgroundColor">#FFFFFF</Color>
+            <Color x:Key="AccentColor">#F26101</Color>
+
+            <!--Locator-->
             <infra:InstanceLocator x:Key="Locator">
             </infra:InstanceLocator>
         </ResourceDictionary>
-        
+
+
     </Application.Resources>
 
 </Application>

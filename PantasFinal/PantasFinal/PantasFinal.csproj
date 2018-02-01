@@ -64,6 +64,12 @@
     <Compile Include="Pages\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MiUbicacionPage.xaml.cs">
+      <DependentUpon>MiUbicacionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PerfilPage.xaml.cs">
+      <DependentUpon>PerfilPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\SyncPage.xaml.cs">
       <DependentUpon>SyncPage.xaml</DependentUpon>
     </Compile>
@@ -174,6 +180,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\ConfPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\PerfilPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\MiUbicacionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

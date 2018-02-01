@@ -18,9 +18,9 @@ namespace PantasFinal.ViewModels
         {
             Menu.Add(new MenuItemViewModel()
             {
-                Icon = "ic_launcher.png",
-                Title = "Enfermedades",
-                PageName = "EnfermedadesPage"
+                Icon = "perfil.png",
+                Title = "Perfil",
+                PageName = "PerfilPage"
 
             });
             Menu.Add(new MenuItemViewModel()

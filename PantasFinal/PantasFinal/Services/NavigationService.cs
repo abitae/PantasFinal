@@ -11,11 +11,12 @@ namespace PantasFinal.Services
     {
         public async Task Navigate(string pageName)
         {
+            //Cierra menu lateral automaticamente
             App.Master.IsPresented = false;
             switch (pageName)
             {
-                case "HierbasPage":
-                  await  App.Navigator.PushAsync(new HierbasPage());
+                case "PerfilPage":
+                  await  App.Navigator.PushAsync(new PerfilPage());
                     break;
                 case "ConsultasPage":
                     await App.Navigator.PushAsync(new ConsultasPage());

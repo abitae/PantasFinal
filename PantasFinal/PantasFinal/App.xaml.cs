@@ -1,8 +1,7 @@
-﻿using PantasFinal.Pages;
-using Xamarin.Forms;
-
-namespace PantasFinal
+﻿namespace PantasFinal
 {
+    using PantasFinal.Pages;
+    using Xamarin.Forms;
     public partial class App : Application
     {
         #region Properties
@@ -10,6 +9,7 @@ namespace PantasFinal
         public static MasterPage Master { get; internal set; }
 
         #endregion
+        #region Constructor
         public App()
         {
             InitializeComponent();
@@ -17,6 +17,8 @@ namespace PantasFinal
             MainPage = new UsuarioPage();
         }
 
+        #endregion
+        #region Metodos
         protected override void OnStart()
         {
             // Handle when your app starts
@@ -30,6 +32,7 @@ namespace PantasFinal
         protected override void OnResume()
         {
             // Handle when your app resumes
-        }
+        } 
+        #endregion
     }
 }
